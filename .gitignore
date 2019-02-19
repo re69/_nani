@@ -1,0 +1,15 @@
+.idea
+out
+__pycache__/
+*$py.class
+build/
+pip-log.txt
+nosetests.xml
+coverage.xml
+.pytest_cache/
+*.log
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
