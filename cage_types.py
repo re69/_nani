@@ -25,3 +25,11 @@ class _Empty(__BaseType):
 class CageType:
     Empty = _Empty()
     Wall = _Wall()
+    _types = [Empty, Wall]
+
+    @staticmethod
+    def by_char(char: str):
+        for cage_type in CageType._types:
+            if cage_type.__str__() == char:
+                return cage_type
+        return CageType.Empty
